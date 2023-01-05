@@ -1,0 +1,19 @@
+name: Releases
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: 自动发布
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ncipollo/release-action@v1
+        with:
+          skipIfReleaseExists: true
+          token: ${{ secrets.WAREHOUSE_TOKEN }}
