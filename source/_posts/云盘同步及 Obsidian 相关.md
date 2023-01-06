@@ -32,7 +32,7 @@ cover: https://bu.dusays.com/2023/01/03/63b412d4497aa.png
 
 前面主要还是关注 `iPad` 和 `Windows` 之间的文件同步，但很明显 `Android` 阵营也有话说。
 
-自己有在玩 `osu!` ，它有官方 `stable` 版、 `lazer` 版， [MATRIX-夜翎](https://b23.tv/316jdI0) 从 `lazer` 版 `fork` 出来所维护的 `mfosu` 版，[摆烂好久都不更新](https://github.com/osudroid/osu-droid) 再这样下去什么时候我自己 `fork` 一个来更新的 `osu!droid` 版，其中我玩的是 `Windows` 上的 `stable` 版和 `Android` 上的 `osu!droid` 版。它们很好的一点就是文件层次是互通的，简单同步俩者的 `Songs` 文件夹即可。
+自己有在玩 `osu!` ，它有官方 `stable` 版、 `lazer` 版， [MATRIX-夜翎](https://space.bilibili.com/305637715) 从 `lazer` 版 `fork` 出来所维护的 `mfosu` 版，[摆烂好久都不更新](https://github.com/osudroid/osu-droid) 再这样下去什么时候我自己 `fork` 一个来更新的 `osu!droid` 版，其中我玩的是 `Windows` 上的 `stable` 版和 `Android` 上的 `osu!droid` 版。它们很好的一点就是文件层次是互通的，简单同步俩者的 `Songs` 文件夹即可。
 
 可就是这么简单的方案实现起来也很累人。
 
