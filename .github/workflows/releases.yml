@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ncipollo/release-action@v1
         with:
-          tag: "v1.9"
+          tag: "v2.0"
           skipIfReleaseExists: true
           token: ${{ secrets.WAREHOUSE_TOKEN }}
