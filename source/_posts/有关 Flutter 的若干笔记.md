@@ -83,6 +83,8 @@ export 'package:package_info_plus/package_info_plus.dart';
 export 'package:dio/dio.dart';
 ```
 
+当然，有时会出现不同包之间的类名冲突，此时在需要使用到该包的地方单独 `import` 即可
+
 #### 构建号错误问题
 
 `Flutter` 使用 `android/app/build.gradle` 来打包 `apk` ，且其引入了 `flutter.gradle` 如 `D:/flutter/packages/flutter_tools/gradle/flutter.gradle`
