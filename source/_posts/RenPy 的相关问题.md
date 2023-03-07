@@ -1,6 +1,10 @@
 ---
 title: RenPy 的相关问题
-tags: renpy
+tags:
+    - renpy
+    - 笔记
+    - 编程
+categories: 游戏开发
 abbrlink: 25222
 date: 2022-01-14 16:46:23
 updated: 2023-01-03 10:31:07
@@ -19,10 +23,10 @@ updated: 2023-01-03 10:31:07
 ```python
 # 开始
 label start:
-	 # 上略
-	 jump chapter0 # 这里跳转至main_story.rpy中的chapter0标签
-	 #
-	 return
+    # 上略
+    jump chapter0 # 这里跳转至main_story.rpy中的chapter0标签
+    #
+    return
 ```
 
 以下为 main_story.rpy 的部分代码。
@@ -33,16 +37,16 @@ label start:
 # 序章
 label chapter0:
 # 上略
-	 menu :
-		  "要和说这件事吗？"
-		  "告诉他吧":
-				$ said_reason = 1
-				call _2_1_A    # 这里跳转至branch_story.rpy中的_2_1_A标签
-		  "不用告诉":
-				$ said_reason = 0
-				call _2_1_B    # 这里跳转至branch_story.rpy中的_2_1_B标签
-	 # 下略
-	 return
+    menu :
+        "要和说这件事吗？"
+        "告诉他吧":
+            $ said_reason = 1
+                call _2_1_A    # 这里跳转至branch_story.rpy中的_2_1_A标签
+        "不用告诉":
+           $ said_reason = 0
+                call _2_1_B    # 这里跳转至branch_story.rpy中的_2_1_B标签
+    # 下略
+    return
 ```
 
 以下为 branch_story.rpy 的部分代码。
@@ -52,13 +56,13 @@ label chapter0:
 
 # 第二章第一个选项
 label _2_1_A:
-	 # 内容略
-	 return
+    # 内容略
+    return
 
 # 第二章第一个选项选A的后加剧情
 label _2_1_A_plus:
-	 # 内容略
-	 return
+    # 内容略
+    return
 ```
 
 ### 2. 怎么修改程序图标呢？
@@ -88,19 +92,19 @@ label _2_1_A_plus:
 将如下内容
 
 ```python
-	 if renpy.variant("pc"):
-		  textbutton _("退出") action Quit(confirm=not main_menu)
-	 # 中略
-	 if not renpy.variant("small"):
-		  add SideImage() xalign 0.0 yalign 1.0
+    if renpy.variant("pc"):
+        textbutton _("退出") action Quit(confirm=not main_menu)
+    # 中略
+    if not renpy.variant("small"):
+        add SideImage() xalign 0.0 yalign 1.0
 ```
 
 改为
 
 ```python
-	 textbutton _("退出") action Quit(confirm=not main_menu)
-	 # 中略
-	 add SideImage() xalign 0.0 yalign 1.0
+    textbutton _("退出") action Quit(confirm=not main_menu)
+    # 中略
+    add SideImage() xalign 0.0 yalign 1.0
 ```
 
 在 gui.rpy 文件中，将如下内容删除。

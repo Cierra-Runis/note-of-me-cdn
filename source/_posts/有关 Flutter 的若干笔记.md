@@ -1,6 +1,10 @@
 ---
 title: 有关 Flutter 的若干笔记
-tags: Flutter
+tags:
+    - Flutter
+    - 笔记
+    - 编程
+categories: 编程
 abbrlink: 495
 date: 2022-11-19 13:13:13
 updated: 2023-01-03 10:31:07

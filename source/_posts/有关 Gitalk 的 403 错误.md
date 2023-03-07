@@ -1,6 +1,9 @@
 ---
 title: 有关 Gitalk 的 403 错误
-tags: Gitalk
+tags:
+    - Gitalk
+    - 笔记
+categories: 建站相关
 abbrlink: 32726
 date: 2021-10-22 12:34:15
 updated: 2023-01-03 10:31:07
